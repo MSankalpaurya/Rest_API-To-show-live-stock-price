@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login/Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f9f2; /* Greenish tint background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 20px;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3c914a; /* Greenish tint button */
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2b6d37; /* Darker shade on hover */
+        }
+
+        .navbar {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        .navbar h1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome to Stock Market App by Sankalp</h1>
+    </div>
+
+    <h2>Login/Register</h2>
+    <form action="/" method="POST">
+        <input type="hidden" name="form_type" value="login">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Register</h2>
+    <form action="/" method="POST">
+        <input type="hidden" name="form_type" value="register">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Welcome to the Stock Market App. Explore and stay updated with the latest stock market trends, track your favorite stocks, and make informed investment decisions.</p>
+    <p>The stock market is a dynamic and complex financial marketplace where individuals and organizations buy and sell shares of publicly traded companies. It serves as a platform for investors to participate in the growth and success of businesses, while also providing opportunities for capital appreciation and wealth creation. Stock markets play a crucial role in the economy by facilitating the allocation of capital, enabling companies to raise funds for expansion and innovation. Investors analyze various factors such as company performance, market trends, and economic indicators to make informed decisions about buying or selling stocks. The stock market is influenced by a wide range of factors, including global events, economic conditions, and investor sentiment. Successful navigation of the stock market requires knowledge, research, and a disciplined approach to managing investments. Whether you are a seasoned investor or just starting your journey, the stock market offers endless possibilities and challenges, making it an exciting and ever-evolving domain to explore.</p>
+
+    <div class="footer">
+        <p>Stock Market App - All rights reserved &copy; 2023</p>
+    </div>
+</body>
+</html>

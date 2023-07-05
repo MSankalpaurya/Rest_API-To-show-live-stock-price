@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Watchlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F3F7F9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #F5F5F5;
+        }
+
+        a.button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        a.button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Watchlist</h1>
+
+    {% if stocks %}
+    <table>
+        <tr>
+            <th>Stock</th>
+            <th>Price</th>
+        </tr>
+        {% for stock in stocks %}
+        <tr>
+            <td>{{ stock.stock }}</td>
+            <td>{{ stock.price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>No stocks saved in watchlist.</p>
+    {% endif %}
+
+    <a href="/home" class="button">Back to Home</a>
+</body>
+</html>
